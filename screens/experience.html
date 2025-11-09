@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <link 
+        rel="stylesheet" 
+        href="../css/style.css"
+    >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+    <header>    
+        <a href="#" class="logo">Santiago</a>
+        <div class="menu-icon" id="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav id="navbar">
+            <a href="../index.html" class="">Home</a>
+            <a href="./services.html" class="">Services</a>
+            <a href="./skills.html" class="">Skills</a>
+            <a href="./education.html" class="">Education</a>
+            <a href="" class="active">Experience</a>
+            <a href="./contact.html" class="">Contact</a>
+        </nav>
+    </header> 
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="exp-card">
+            <h3>Cafetería Management System</h3>
+            <p><em>Personal Project</em></p>
+            <p>Developed a multi-threaded coffee shop management system in Python with MVC architecture and database integration.</p>
+        </div>
+        <div class="exp-card">
+            <h3>Freelance Portfolio Website</h3>
+            <p><em>Frontend Project</em></p>
+            <p>Designed and coded this portfolio using HTML, CSS and JavaScript with a minimalist dark theme.</p>
+        </div>
+        <div class="text-github">
+            <p>You can visit my github to see all my projects.</p>
+            <a href="https://github.com/EverydayFlutter/login-signup-forms" target="_blank"><img src="../img/social.png" alt="github" /> </a>
+        </div>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuIcon = document.getElementById('menu-icon');
+            const navBar = document.getElementById('navbar');
+
+            // **Añade estas líneas para depuración:**
+            console.log('Ícono del menú:', menuIcon); 
+            console.log('Barra de navegación:', navBar); 
+
+            function toggleMenu() {
+                if (navBar) {
+                    navBar.classList.toggle('active');
+                    // **Añade esta línea para depuración:**
+                    console.log('Clase activa alternada. Estado actual:', navBar.classList.contains('active'));
+                }
+            }
+
+            if (menuIcon) {
+                menuIcon.addEventListener('click', toggleMenu);
+            }
+        });
+    </script>
+</body>
+</html>

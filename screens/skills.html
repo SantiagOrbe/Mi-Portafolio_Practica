@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link 
+        rel="stylesheet" 
+        href="../css/style.css"
+    >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+    <header>    
+        <a href="#" class="logo">Santiago</a>
+        <div class="menu-icon" id="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav id="navbar">
+            <a href="../index.html" class="">Home</a>
+            <a href="./services.html" class="">Services</a>
+            <a href="" class="active">Skills</a>
+            <a href="./education.html" class="">Education</a>
+            <a href="./experience.html" class="">Experience</a>
+            <a href="./contact.html" class="">Contact</a>
+        </nav>
+    </header> 
+    <section id="skills">
+        <h2>Skills</h2>
+        <div id="skill-container">
+            <div class="skill-card">
+                <p>
+                    <img src="../img/html.png" alt="HTML"/> <br/>
+                    <strong>HTML / CSS:</strong> <br/> 90%
+                </p>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <p>
+                    <img src="../img/java-script.png" alt="JavaScript"/> <br/>
+                    <strong>JavaScript:</strong> <br/> 35%
+                </p>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 35%;"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <p>
+                    <img src="../img/file.png" alt="Python / Django"/> <br/>
+                    <strong>Python / Django:</strong> <br/> 50%
+                </p>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 50%;"></div>
+                </div>
+            </div>
+            <div class="skill-card">
+                <p>
+                    <img src="../img/backend.png" alt="SQL / Databases"/> <br/>
+                    <strong>SQL / Databases:</strong> <br/> 30%
+                </p>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 30%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuIcon = document.getElementById('menu-icon');
+            const navBar = document.getElementById('navbar');
+
+            // **Añade estas líneas para depuración:**
+            console.log('Ícono del menú:', menuIcon); 
+            console.log('Barra de navegación:', navBar); 
+
+            function toggleMenu() {
+                if (navBar) {
+                    navBar.classList.toggle('active');
+                    // **Añade esta línea para depuración:**
+                    console.log('Clase activa alternada. Estado actual:', navBar.classList.contains('active'));
+                }
+            }
+
+            if (menuIcon) {
+                menuIcon.addEventListener('click', toggleMenu);
+            }
+        });
+    </script>
+</body>
+</html>

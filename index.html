@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link 
+        rel="stylesheet" 
+        href="./css/style.css"
+    >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title>Portfolio Website</title>
+</head>
+<body>
+    <header>
+        <a href="" class="logo">Santiago</a>
+        <div class="menu-icon" id="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav id="navbar">
+            <a href="index.html" class="active">Home</a>
+            <a href="./screens/services.html" class="">Services</a>
+            <a href="./screens/skills.html" class="">Skills</a>
+            <a href="./screens/education.html" class="">Education</a>
+            <a href="./screens/experience.html" class="">Experience</a>
+            <a href="./screens/contact.html" class="">Contact</a>
+        </nav>
+    </header> 
+    <section class="home">
+        <div class="home-img">
+            <img src="./img/main.jpg" alt=""/>
+        </div>        
+        <div class="home-content">
+            <h1>Hi, it's <span>Santiago</span></h1>
+            <h3 class="typing-text">I'm a <span>Software Developer</span></h3>
+            <p>
+                I'm a passionate software developer with a strong background in creating 
+                efficient and scalable web applications. I love turning ideas into reality 
+                through code and continuously learning new technologies to improve my skills. 
+                Let's build something amazing together!
+            </p>
+            <div class="social-incons">
+                <a target="_blank" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a target="_blank" href="https://github.com/EverydayFlutter/login-signup-forms"><i class="fa-brands fa-github"></i></a>
+                <a target="_blank" href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                <a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="#" class="btn">Hire me</a>
+        </div>
+    </section>   
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuIcon = document.getElementById('menu-icon');
+            const navBar = document.getElementById('navbar');
+
+            // **Añade estas líneas para depuración:**
+            console.log('Ícono del menú:', menuIcon); 
+            console.log('Barra de navegación:', navBar); 
+
+            function toggleMenu() {
+                if (navBar) {
+                    navBar.classList.toggle('active');
+                    // **Añade esta línea para depuración:**
+                    console.log('Clase activa alternada. Estado actual:', navBar.classList.contains('active'));
+                }
+            }
+
+            if (menuIcon) {
+                menuIcon.addEventListener('click', toggleMenu);
+            }
+        });
+    </script>
+</body>
+</html>
