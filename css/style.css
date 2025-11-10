@@ -556,11 +556,10 @@ span{
 }
 
 .text-github img{
-    margin-top: -90px;
     cursor: pointer;
     transition:  0.3s ease;
-    clip-path: circle(50% at 50% 50%); /* Hace el elemento circular */
-
+    width: 300px;
+    margin-top: 4%;
 }
 .text-github img:hover{
     transform: scale(1.05);
@@ -573,14 +572,10 @@ span{
 @media (max-width: 768px){
     .text-github img{
         display: block;
-        margin: auto auto;    
-        margin-top: 0; 
-        margin-bottom: 0;
-        margin-left: -30px;
-        margin-right: auto ;
-
-
+        margin: 30px auto;    
+            
     }
+    
     #experience{
         width: 100%;
         padding: 0 5%;
@@ -639,6 +634,7 @@ span{
     display: flex;
     transition: 0.3s ease;
     border-bottom: 1px solid #b74b4b;
+    width: 202px;
 }
 
 #contact-form textarea{
@@ -684,5 +680,10 @@ span{
         height: 100%;
         gap: 40px;
     }
-
+    #contact{
+        margin: auto auto;
+    }
+    .social-incons{
+        margin: auto auto;
+    }
 }
